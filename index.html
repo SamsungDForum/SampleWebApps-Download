@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=1920, height=1080" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <title>Download</title>
+    <script src="$WEBAPIS/webapis/webapis.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1 class="appName">Download</h1>
+        <h2 class="appVersion">2.0.0</h2>
+        <div class="tvInfo">
+            <p class="firmware"></p>
+            <p class="model"></p>
+        </div>
+    </header>
+    <section class="main">
+        <section id="info-container">
+            <h1>Internet Download Speed Test</h1>
+            <aside>
+                <p>
+                    <span>Slow</span>
+                    <span>Fast</span>
+                </p>
+                <div class="gradient-block"></div>
+            </aside>
+            <div class="test-window">
+                <p class="current-speed">Current speed: <span>--</span></p>
+                <p class="avg-speed">Average speed: <span>--</span></p>
+                <p class="max-speed">Max speed: <span>--</span></p>
+                <p class="elapsed-time">Elapsed time: <span>--</span></p>
+            </div>
+            <div class="progress-bar">
+                <div></div>
+            </div>
+            <h2></h2>
+        </section>
+
+    </section>
+    <section class="logs">
+        <h2>Logs:</h2>
+        <div data-list-item class="logsContainer">
+
+        </div>
+    </section>
+    <section class="info">
+        <section class="info-container">
+            <h2>Info</h2>
+
+            <p>This application lets you test your internet connection using Download API.</p>
+
+        </section>
+    </section>
+    <section class="buttons" id="buttons">
+        <button data-list-item class="download-button">Start</button>
+        <button data-list-item class="cancel-button">Cancel</button>
+
+        <button data-list-item class="toggle-info">Show/hide info</button>
+    </section>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/keyhandler.js"></script>
+    <script src="./js/logger.js"></script>
+    <script src="./js/navigation.js"></script>
+    <script src="./js/init.js"></script>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
